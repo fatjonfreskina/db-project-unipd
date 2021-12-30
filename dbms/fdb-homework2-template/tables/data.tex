@@ -1,0 +1,105 @@
+\begin{longtable}{|p{.15\columnwidth}|p{.15\columnwidth} |p{.30\columnwidth}|p{.10\columnwidth}|p{.20\columnwidth} |} 
+\hline
+\textbf{Relation} & \textbf{Attribute} & \textbf{Description} & \textbf{Domain} & \textbf{Constraints} \\\hline
+
+\multirow{4}{*}{Sales}
+    & ID & Identifier of the sale & Serial & Primary key \\\cline{2-5}
+    & Date & Date at which the sale was performed & Datetime & Not Null\\\cline{2-5}
+    & Employee & Identifier of the employee & Text & Foreign key to Employee\\\cline{2-5}
+    & Customer & Identifier of the customer & Text & Foreign key to Customer\\\hline
+
+\multirow{2}{*}{New Car Sale} 
+    & NewCar & Identifier of the New Car & Text & Foreign key to New Car, Primary key with ID \\\cline{2-5}
+    & Sales & Identifier of the sale & Serial & Foreign key to Sales, Primary key with NewCar\\\hline
+
+\multirow{4}{*}{NewCar}
+    & License Plate & Identifier of the New Car & Text & Primary key \\\cline{2-5} 
+    & Price & Price of the car & Float & Not Null \\\cline{2-5}
+    & Year & Year of registration of the car & Smallint & Not Null \\\cline{2-5}
+    & Model & Model of the car & Text & Not Null \\\hline
+
+\multirow{2}{*}{Used Car Sale} 
+    & Sales & Identifier of the sale & Serial & Foreign key to Sales\\\cline{2-5}
+    & UsedCar & Identifier of the Used Car & Text & Foreign key to Used Car \\ \hline
+
+\multirow{7}{*}{Used Car}
+    & License Plate & Identifier of the Used Car & Text & Primary key \\\cline{2-5}
+    & Model & Model of the car & Text & Not Null \\\cline{2-5} 
+    & Status & Status of the car & Text & Not Null\\\cline{2-5}
+    & Km & Mileage of the car & Int & Not Null \\\cline{2-5}
+    & Price & Price referred to the sale of the used vehicle & Float & Not Null \\\cline{2-5} 
+    & Year & Year of the car & Smallint & Not Null \\ \hline
+
+\multirow{5}{*}{Customer}
+    & TC & Identifier of the customer & Text & Primary key \\\cline{2-5}
+    & Name & Name of the customer & Text & Not Null \\\cline{2-5}
+    & Surname & Surname of the customer & Text & Not Null \\\cline{2-5}
+    & Phone & Phone number of the customer & Text & Not Null \\\cline{2-5}
+    & Address &  Residential address of the client & Text & Not Null \\\hline
+
+\multirow{5}{*}{Car Dealer} 
+    & Name & Branch name of the car dealer & Text & Primary key \\\cline{2-5}
+    & City & City where the branch is located & Text & Not Null \\\cline{2-5}  
+    & Phone & Phone number associated to the branch & Text & Not Null \\\cline{2-5}  
+    & Fax & Fax number & Text & \\\cline{2-5}
+    & Address & Address of the branch & Text & Not Null \\\hline
+
+\multirow{7}{*}{Employee} 
+    & TC & Identifier of the employee & Text & Primary key \\\cline{2-5} 
+    & Name & Name of the employee & Text & Not Null \\\cline{2-5}
+    & Surname & Surname of the employee & Text & Not Null \\\cline{2-5}
+    & Email & Email of the employee used to access the management system & Text & Not Null \\\cline{2-5}
+    & Password & Password needed by the employee to access the management system & Text & Not Null \\\cline{2-5}
+    & Role & Identifier of a Role & Text & Foreign key to Role\\\cline{2-5}
+    & Car Dealer & Branch name of the car dealer & Text & Foreign Key to Car Dealer \\\hline
+
+\multirow{2}{*}{Role} 
+    & Role Name & Identifier of a Role & Text & Primary key \\\cline{2-5}
+    \\\hline
+
+\multirow{6}{*}{Rental} 
+    & Rental ID  & Identifier of a Rent & Serial & Primary key \\\cline{2-5}
+    & Start Date & Date from which the Rental starts & Text & Not Null\\\cline{2-5}
+    & Finish Date & Date at which the Rental finished & Text & \\\cline{2-5}
+    & Employee & Identifier of the employee & Text & Foreign key to Employee\\\cline{2-5}
+    & Customer & Identifier of the customer & Text & Foreign key to Customer\\\cline{2-5}
+    & Price & Rental price related & Float & Not Null\\\cline{2-5}
+    & Used Car & Identifier of the Used Car & Text & Foreign key to UsedCar\\\hline
+
+\multirow{4}{*}{Used Repairs} 
+    & Repair & Identifier to Repair & Serial & Foreign key to Repair, Primary key with Used Car\\\cline{2-5}
+    & UsedCar & Identifier of the Used Car & Text & Foreign key to External Car, Primary key with Repair\\\hline
+
+\multirow{3}{*}{Repair}  
+    & ID & Identifier of Repair & Serial & Primary key \\\cline{2-5}
+    & Date & Date at which the Repair is done & Text & Not Null \\\cline{2-5}
+    & Employee & Identifier of the employee who processes the Repair &  Text & Foreign key to Employee\\\hline
+
+\multirow{2}{*}{External Repairs} 
+    & Repair & Identifier of Repair & Serial & Foreign key to Repair, Primary key with ExternalCar\\\cline{2-5}
+    & ExternalCar & Identifier of External Car & Text & Foreign key to ExternalCar, Primary key with Repair\\\hline
+
+\multirow{4}{*}{External Car} 
+    & Licence Plate & Identifier of External Car & Text & Primary key\\\cline{2-5}
+    & Year & Year of the External Car  & Smallint & Not Null \\\cline{2-5}
+    & Model & Model of the External Car & Text & Not Null \\\cline{2-5}
+    & Customer  & Identifier of the customer & Text & Foreign key to Customer\\\hline
+
+\multirow{4}{*}{Repair Uses} 
+    & Replacement & Identifier of the Replacement & Serial & Foreign key to Replacement, Primary key with Repair\\\cline{2-5}
+    & Repair & Identifier of Repair & Serial & Foreign key to Repair, Primary key with Replacement\\\cline{2-5}
+    & Amount & Amount of replacement parts & Integer & Not Null \\\hline
+
+\multirow{4}{*}{Replacement} 
+    & ID & Identifier of Replacement Piece & Serial & Primary key\\\cline{2-5}
+    & Name & Name of the Replacement Piece & Text & Not Null\\\cline{2-5}
+    & PricePerUnit & Price of the single replacement piece & Float & Not Null \\\cline{2-5}
+    & Supplier & Identifier of Supplier & Text & Foreign key to Supplier\\\hline
+
+\multirow{2}{*}{Supplier} 
+    & Name & Identifier of Supplier & Text & Primary key \\\cline{2-5}
+    & Phone & Phone number of the Supplier & Text & Not Null \\\hline
+
+
+
+\end{longtable}

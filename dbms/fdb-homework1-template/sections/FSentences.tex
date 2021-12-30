@@ -1,0 +1,86 @@
+\section{Filtered Sentences}
+%Organize, in a schematic way, the information that can be extracted from the Natural Language Sentences
+\noindent \textbf{{\large \underline{Car Dealer}}} 
+\vspace{0.1cm}
+\newline
+The car dealer has the ability to sell or rent cars that may be new or used. As for used cars, he can make repairs if necessary:
+\begin{itemize}
+    \item Each car dealer is defined by his name, address, city, phone and fax. 
+    \item Each car dealer has its own selection of new and used cars.
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Sale}}}
+\vspace{0.1cm}
+\newline
+Contract or invoice between the car dealer and the customer by which a car, new or used, is sold:
+\begin{itemize}
+    \item Each sale is defined by an identifier and a date.
+    \item Each sale is associated with the buyer and the car concerned.
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Rental}}}
+\vspace{0.1cm}
+\newline
+Agreement between the car dealer and the customer by which a car is temporarily given to the latest.
+It is also agreed the price of the rental of a particular car:
+\begin{itemize}
+    \item Each rental is defined by an identifier, a rental start date and a rental finish date.
+    \item Each rental is associated with the car dealer and the car concerned.
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Customer}}}
+\vspace{0.1cm}
+\newline
+Customer within the car dealer chain, can buy or rent one or more cars:
+\begin{itemize}
+    \item The customer is the other party in the sale or rental agreement.
+    \item Each customer is tracked through the tax code, followed by name, surname, 
+          telephone and address. 
+\end{itemize}
+
+\noindent \textbf{{\large \underline{New Car}}} 
+\vspace{0.1cm}
+\newline
+Sold by a car dealer: 
+\begin{itemize}
+    \item Each new car is defined by a unique license plate, price, year and model. 
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Used Car}}} 
+\vspace{0.1cm}
+\newline
+Sold or rented by a car dealer, they differ from NewCar because they may be currently rented
+or not, or they may be under repair and therefore not available. They can also be rented or sold directly: 
+\begin{itemize} 
+    \item Each used car is defined by a unique license plate, sale price, year, status, numbers of km and model.
+    \item They are the only cars that are repaired by the internal repair service.
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Repair}}} 
+\vspace{0.1cm}
+\newline
+Process associated only with used car, so only used cars are repaired, with the possibility
+of replacing parts for damaged ones. Additionally, each repair is owned by a single car dealer, so two or more repairs 
+are not shared between different car dealer: 
+\begin{itemize}
+    \item Each repair is defined by an identifier and a date.
+    \item If there is the need to use any replacement, their quantity is also recorded. 
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Replacement}}} 
+\vspace{0.1cm}
+\newline
+Which can be used during the repair: 
+\begin{itemize}
+    \item Each replacement is defined by an identifier, name and the price per unit.
+    \item Each replacement can be provided by multiple suppliers.
+\end{itemize}
+
+\noindent \textbf{{\large \underline{Supplier}}} 
+\vspace{0.1cm}
+\newline
+Which has in its catalogue one or more replacement intended for repair: 
+\begin{itemize} 
+    \item Each supplier is defined by a name and a phone. 
+    \item We also keep track of suppliers who have not supplied any replacement. 
+\end{itemize}

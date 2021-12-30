@@ -1,0 +1,110 @@
+\begin{longtable}{|p{.20\columnwidth}|p{.20\columnwidth} |p{.30\columnwidth}|p{.25\columnwidth} |} 
+\hline
+\textbf{Relationship} & \textbf{Description} & \textbf{Component Entities} & \textbf{Attributes} \\\hline
+
+Employs & Associates Car Dealer with his Employees. & \begin{itemize}
+		\vspace{-1em}
+		\item CarDealer (1,N);
+		\item Employee (1,1);
+	\end{itemize}
+ & \\\hline
+
+Buys & A Customer makes a purchase. & \begin{itemize}
+		\vspace{-1em}
+		\item Customer (0,N);
+		\item Sales (1,1)
+	\end{itemize}
+ & \\\hline
+
+CustomerRents & A Customer makes a rental. & \begin{itemize}
+		\vspace{-1em}
+		\item Customer (0,N);
+		\item Rental (1,1);
+	\end{itemize}
+ & \\\hline
+
+NewCarSale & Associates a New Car to the Sales in which it was sold. & \begin{itemize}
+		\vspace{-1em}
+		\item NewCar (0,1);
+		\item Sales (0,1);
+	\end{itemize}
+ & \\\hline
+
+UsedCarSale & Associates a Used Car to the Sales in which it was sold. & \begin{itemize}
+		\vspace{-1em}
+		\item UsedCar (0,1);
+		\item Sales (0,1);
+	\end{itemize}
+ & \\\hline
+
+RepairUses & Associates a Repairment with the replacement parts that have been used. & \begin{itemize}
+	\vspace{-1em}
+	\item Repair (0,N);
+	\item Replacement (0,N);
+\end{itemize}
+& amount \\\hline
+
+Supplies & Associates a replacement part with his supplier. & \begin{itemize}
+	\vspace{-1em}
+	\item Replacement (1,1);
+	\item Supplier (0,N);
+\end{itemize}
+& \\\hline
+
+Rents & Association between Used Cars and Rental. & \begin{itemize}
+	\vspace{-1em}
+	\item Used car (0,N);
+	\item Rental (1,1);
+\end{itemize}
+& \\\hline
+
+UsedRepairs & Associates an Old Car to a Repair instance. & \begin{itemize}
+	\vspace{-1em}
+	\item Used car (0,N);
+	\item Repair (0,1);
+\end{itemize}
+& \\\hline
+
+Has & Customer has an external car. & \begin{itemize}
+	\vspace{-1em}
+	\item Customer (0,N);
+	\item External car (1,1);
+\end{itemize}
+& \\\hline
+
+ExternalRepairs & Customer wants his/her external car to be repaired. & \begin{itemize}
+	\vspace{-1em}
+	\item External car (0,N);
+	\item Repair (0,1);
+\end{itemize}
+& \\\hline
+
+EmployeeRents & Associates an Employee to a Rental he/she made. & \begin{itemize}
+	\vspace{-1em}
+	\item Employee (0,N);
+	\item Rental (1,1);
+\end{itemize}
+& \\\hline
+
+Sells & Employee sells an Used or a New Car. & \begin{itemize}
+	\vspace{-1em}
+	\item Employee (0,N);
+	\item Sales (1,1);
+\end{itemize}
+& \\\hline
+
+Repairs & Associates an Employee to a Repair he/she performed. & \begin{itemize}
+	\vspace{-1em}
+	\item Employee (0,N);
+	\item Repair (1,1);
+\end{itemize}
+& \\\hline
+
+HasRole & Associates an Employee to his/her Role in the company. & \begin{itemize}
+	\vspace{-1em}
+	\item Employee (1,1);
+	\item Role (0,N);
+\end{itemize}
+& \\\hline
+
+\end{longtable}

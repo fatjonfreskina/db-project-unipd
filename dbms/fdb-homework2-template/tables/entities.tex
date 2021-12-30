@@ -1,0 +1,108 @@
+\begin{longtable}{|p{.20\columnwidth}|p{.30\columnwidth} |p{.20\columnwidth}|p{.20\columnwidth} |} 
+\hline
+\textbf{Entity} & \textbf{Description} & \textbf{Attributes} & \textbf{Identifier}  \\\hline
+
+
+Car Dealer & Business that has the ability to sell or rent cars that may be new or used. Univocally identified by the Car Dealer's name (name of the business). & \begin{itemize}
+        \vspace{-1em}
+        \item name
+        \item address
+        \item city
+        \item phone
+        \item fax
+    \end{itemize}
+& name\\\hline
+ 
+ Customer & Customer within the car dealer chain, can buy or rent one or more cars. Can also have his/her car repaired. Identified by the Tax Code. & \begin{itemize}
+        \vspace{-1em}
+        \item TC
+        \item name
+        \item surname
+        \item phone
+        \item address
+    \end{itemize}
+ &  TC \\\hline
+
+ Sales & Contract or invoice between the car dealer and the customer by which a car, new or used, is sold. Each sale is identified by an id. & \begin{itemize}
+    \vspace{-1em}
+    \item id
+    \item date
+    \end{itemize}
+& id \\\hline
+
+Rental & Contract or invoice between the car dealer and the customer related to the car rental processes of Used Car. Each rental is identified by an id. & \begin{itemize}
+        \vspace{-1em}
+        \item id
+        \item start date
+        \item finish date
+        \item price
+    \end{itemize}
+& id\\\hline
+
+New Car & Real world object that can be sold (and only sold) by a car dealer. Each New Car is identified by its license plate & \begin{itemize}
+    \vspace{-1em}
+    \item license plate
+    \item price
+    \item year
+    \item model
+\end{itemize}
+&  license plate\\\hline
+
+Used Car & Real world object that can be sold or rented by a car dealer. They are different from New Cars in the system because they may be rented or not, also they may be under repair and therefore not available. Each used car is identified by its license plate& \begin{itemize}
+    \vspace{-1em}
+    \item license plate
+    \item price
+    \item year
+    \item status
+    \item km
+    \item model
+\end{itemize}
+&  license plate\\\hline
+
+External Car & Real world object that doesn't belong to the car dealer but has been processed in the repair service. Identified by a licence plate. & \begin{itemize}
+        \vspace{-1em}
+        \item licence plate
+		\item year
+		\item model
+    \end{itemize}
+ &  licence plate \\\hline
+ 
+ Repair & Repair service that the car dealer offers for the used cars that belong to the branch and external cars. Identified by an id. & \begin{itemize}
+        \vspace{-1em}
+        \item id
+        \item date
+    \end{itemize}
+ &  id \\\hline
+
+Replacement & A list of replacing parts needed for the repair service. Identified by an id. & \begin{itemize}
+    \vspace{-1em}
+    \item id
+    \item name
+	\item price per unit
+    \end{itemize}
+& id \\\hline
+
+Supplier & A vendor that supplies required parts to the repair service. Identified by an id. & \begin{itemize}
+    \vspace{-1em}
+    \item name
+    \item phone
+\end{itemize}
+&  name\\\hline
+
+Role & Information in the system that is responsible for keeping track of different roles of various employees. Identified by role. & \begin{itemize}
+    \vspace{-1em}
+    \item role
+\end{itemize}
+&  role\\\hline
+
+Employee & Representative of a real person who works at the car dealer. They are registered to the system with their given attributes. Each employee is identified by her/his Tax Code. & \begin{itemize}
+    \vspace{-1em}
+    \item TC
+    \item name
+    \item surname
+    \item email
+    \item password
+\end{itemize}
+&  TC\\\hline
+
+\end{longtable}

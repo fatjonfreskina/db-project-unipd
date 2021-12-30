@@ -1,0 +1,680 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.17)  24 NOV 2021 16:40
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/main.tex
+(/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/main.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/local_macros.tex (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks18
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box47
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen147
+\ttl@minus=\dimen148
+\ttl@toksa=\toks19
+\titlewidth=\dimen149
+\titlewidthlast=\dimen150
+\titlewidthfirst=\dimen151
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count190
+\LTcapwidth=\dimen152
+\LT@head=\box48
+\LT@firsthead=\box49
+\LT@foot=\box50
+\LT@lastfoot=\box51
+\LT@cols=\count191
+\LT@rows=\count192
+\c@LT@tables=\count193
+\c@LT@chunks=\count194
+\LT@p@ftn=\toks20
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/advdate/advdate.sty
+Package: advdate 1996/10/20 Advance Date Package
+\r@k=\count195
+\un@r=\count196
+\m@l=\count197
+\m@s=\count198
+\M@s=\count199
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/cmbright/cmbright.sty
+Package: cmbright 2005/04/13 v8.1 (WaS)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmbr/m/n on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/cmbrm/m/it on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/cmbrm/m/it on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmbrm/m/it --> OML/cmbrm/b/it on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/cmbrs/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/cmbrs/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmbr/m/sl on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmbr/m/sl on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \alpha on input line 37.
+LaTeX Font Info:    Redeclaring math symbol \beta on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \gamma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \delta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \epsilon on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \zeta on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \eta on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \theta on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \iota on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \kappa on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \lambda on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \mu on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \nu on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \xi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \pi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \rho on input line 52.
+LaTeX Font Info:    Redeclaring math symbol \sigma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \tau on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \upsilon on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \phi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \chi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \psi on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \omega on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \varepsilon on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \vartheta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \varpi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \varrho on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \varphi on input line 65.
+LaTeX Info: Redefining \LaTeX on input line 129.
+LaTeX Info: Redefining \LaTeXe on input line 139.
+LaTeX Font Info:    Trying to load font information for OT1+cmbr on input line 144.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
+File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen155
+\ar@mcellbox=\box52
+\extrarowheight=\dimen156
+\NC@list=\toks21
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box53
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen157
+\c@nlinenum=\count266
+\TeXr@lab=\toks22
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count267
+\multirow@dima=\skip58
+\bigstrutjot=\dimen158
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box54
+) (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=572.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=80.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count269
+\scratchdimen=\dimen159
+\scratchbox=\box55
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen160
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 8.
+ (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/groupdata.tex
+LaTeX Font Info:    Trying to load font information for OML+cmbrm on input line 4.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
+File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmbrs on input line 4.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/cmbright/omscmbrs.fd
+File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <12> not available
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 4.
+
+Underfull \vbox (badness 10000) detected at line 14
+ []
+
+)
+<logos/logo_800anni.png, id=1, 803.0pt x 228.855pt>
+File: logos/logo_800anni.png Graphic file (type png)
+<use logos/logo_800anni.png>
+Package pdftex.def Info: logos/logo_800anni.png  used on input line 8.
+(pdftex.def)             Requested size: 236.01561pt x 67.2637pt.
+<logos/DEI.png, id=3, 89.6148pt x 54.6843pt>
+File: logos/DEI.png Graphic file (type png)
+<use logos/DEI.png>
+Package pdftex.def Info: logos/DEI.png  used on input line 8.
+(pdftex.def)             Requested size: 94.4048pt x 57.61043pt.
+ [1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/logos/logo_800anni.png> </Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/logos/DEI.png>] (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/sections/Conceptual.tex
+LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 6.
+<ER_final.png, id=13, 1113.15875pt x 1059.96pt>
+File: ER_final.png Graphic file (type png)
+<use ER_final.png>
+Package pdftex.def Info: ER_final.png  used on input line 10.
+(pdftex.def)             Requested size: 540.61172pt x 455.24019pt.
+
+Overfull \hbox (68.58049pt too wide) in paragraph at lines 10--11
+[] 
+ []
+
+[2] (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/tables/entities.tex
+LaTeX Font Info:    Trying to load font information for TS1+cmbr on input line 8.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/cmbright/ts1cmbr.fd
+File: ts1cmbr.fd 2005/04/13 v8.1 (WaS)
+)
+Underfull \hbox (badness 1117) in paragraph at lines 16--16
+[]|\OT1/cmbr/m/n/10 Customer within the
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 16--16
+\OT1/cmbr/m/n/10 buy or rent one or
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 26--26
+[]|\OT1/cmbr/m/n/10 Contract or in-voice
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 33--33
+[]|\OT1/cmbr/m/n/10 Contract or in-voice
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 42--42
+\OT1/cmbr/m/n/10 ti-fied by its li-cense
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 51--51
+\OT1/cmbr/m/n/10 Cars in the sys-tem
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 51--51
+\OT1/cmbr/m/n/10 rented or not, also
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 62--62
+\OT1/cmbr/m/n/10 car dealer but has
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 70--70
+\OT1/cmbr/m/n/10 car dealer of-fers for
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 92--92
+\OT1/cmbr/m/n/10 for keep-ing track of
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 98--98
+[]|\OT1/cmbr/m/n/10 Representative of a
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 98--98
+\OT1/cmbr/m/n/10 at the car dealer.
+ []
+
+
+Overfull \hbox (26.39694pt too wide) in alignment at lines 1--108
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 108
+ []
+
+[3 </Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/ER_final.png>] [4] [5]) (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/tables/relationships.tex
+Underfull \hbox (badness 1292) in paragraph at lines 40--40
+[]|\OT1/cmbr/m/n/10 Associates a Re-pair-
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 47--47
+\OT1/cmbr/m/n/10 ment part with his
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 75--75
+[]|\OT1/cmbr/m/n/10 Customer wants his
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmbr/m/n/10 Associates an Em-
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 82--82
+\OT1/cmbr/m/n/10 ployee to a Rental
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmbr/m/n/10 Employee sells an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\OT1/cmbr/m/n/10 Associates an Em-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+[]|\OT1/cmbr/m/n/10 Associates an Em-
+ []
+
+
+Overfull \hbox (26.39694pt too wide) in alignment at lines 1--110
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+[6]) [7]
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+) (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/sections/Logical.tex
+
+pdfTeX warning: pdflatex (file /Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/relational_schema.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<relational_schema.pdf, id=41, 844.11356pt x 484.69078pt>
+File: relational_schema.pdf Graphic file (type pdf)
+<use relational_schema.pdf>
+Package pdftex.def Info: relational_schema.pdf  used on input line 20.
+(pdftex.def)             Requested size: 464.26389pt x 266.58075pt.
+[10] (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/tables/data.tex
+Underfull \hbox (badness 1527) in paragraph at lines 8--8
+[]|\OT1/cmbr/m/n/10 Foreign key to Em-
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 9--9
+[]|\OT1/cmbr/m/n/10 Foreign key to Cus-
+ []
+
+
+Overfull \hbox (1.18077pt too wide) in paragraph at lines 12--12
+[]|\OT1/cmbr/m/n/10 LicensePlateNew| 
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 12--12
+[]|\OT1/cmbr/m/n/10 Foreign key to New
+ []
+
+
+Overfull \hbox (3.28911pt too wide) in paragraph at lines 23--23
+[]|\OT1/cmbr/m/n/10 LicensePlateUsed| 
+ []
+
+
+Overfull \hbox (15.19394pt too wide) in alignment at lines 1--32
+ [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 32
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 55--55
+[]|\OT1/cmbr/m/n/10 Foreign Key to Car
+ []
+
+
+Overfull \hbox (15.19394pt too wide) in alignment at lines 32--62
+ [] [] [] [] [] 
+ []
+
+[11 </Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/relational_schema.pdf>]
+Underfull \hbox (badness 1527) in paragraph at lines 65--65
+[]|\OT1/cmbr/m/n/10 Foreign key to Em-
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 66--66
+[]|\OT1/cmbr/m/n/10 Foreign key to Cus-
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 76--76
+[]|\OT1/cmbr/m/n/10 Foreign key to Em-
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 80--80
+\OT1/cmbr/m/n/10 nal-Car, Pri-mary key
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 86--86
+[]|\OT1/cmbr/m/n/10 Foreign key to Cus-
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 89--89
+[]|\OT1/cmbr/m/n/10 Foreign key to Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmbr/m/n/10 place-ment, Pri-mary
+ []
+
+
+Overfull \hbox (15.19394pt too wide) in alignment at lines 62--94
+ [] [] [] [] [] 
+ []
+
+[12]
+Overfull \hbox (15.19394pt too wide) in alignment at lines 94--105
+ [] [] [] [] [] 
+ []
+
+[13])) (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/sections/Contributions.tex
+Overfull \hbox (32.88223pt too wide) in alignment at lines 3--30
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 30
+ []
+
+) [14] (/Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/main.aux) ) 
+Here is how much of TeX's memory you used:
+ 3312 strings out of 478994
+ 48190 string characters out of 5858183
+ 408928 words of memory out of 5000000
+ 20737 multiletter control sequences out of 15000+600000
+ 408376 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,14n,77p,544b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb>
+Output written on /Users/fatjonfreskina/Desktop/dbms/fdb-homework2-template/main.pdf (14 pages, 208577 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

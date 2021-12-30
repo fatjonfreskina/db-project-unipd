@@ -1,0 +1,126 @@
+\section{Logical Design}
+
+\subsection{Transformation of the Entity-Relationship Schema}
+
+
+\subsubsection{Redundancy Analysis}
+\begin{itemize}
+	\item The proposed ER Schema does not have any external identifier.
+	\item The proposed ER Schema does not have any relationship cycles.
+	\item The proposed ER Schema does not have any derivated attributes.
+\end{itemize}
+
+\subsubsection{Choice of Principal Identifiers}
+By checking the graph of the (main) external identifiers, it appears that the scheme does 
+not have external identification cycles, furthermore the main identifiers respect the selection criteria.
+\subsection{Analysis of Database Load}
+The finance team wants to know the repairments number for each used car in order to deduce the convenience of keeping or not the car for rent option.\\ 
+We compute the load analysis to decide whether to introduce or not the \#repairs: a derived attribute for the UsedCar entity to quickly check how many repairs a car underwent.\\ 
+We studied an example considering 10000 instances of repairs and 50 of used cars.
+
+\newpage
+
+\begin{longtable}{|p{.25\columnwidth}|p{.45\columnwidth}|p{.1\columnwidth}|p{.1\columnwidth}|}
+	\hline
+	\textbf{Operation} & \textbf{Description} & \textbf{Frequency} & \textbf{Type} \\
+	\hline 
+	\centering{O$_1$} \\ Insert new repair & Store data about a new repair coming from a UsedCar & 100/month & Online \\
+	\hline
+	\centering{O$_2$} \\ Repair list & Print the list of the repair from a UsedCar & 1/month & Online \\
+	\hline
+\end{longtable}
+
+\textbf{If we have no redundancy:}
+\begin{itemize}
+\item in the O$_1$ operation: 
+\begin{longtable}{|p{.2\columnwidth}|p{.2\columnwidth}|p{.1\columnwidth}|p{.1\columnwidth}|p{.20\columnwidth}|}
+	\hline
+	\textbf{Concept} & \textbf{Construct} & \textbf{Access} & \textbf{Type} & \textbf{Average Access} \\
+	\hline 
+	Repair & Entity & 1 & W & 1x100x2 = 200 \\
+	\hline
+	UsedRepairs & Relationship & 1 & W & 1x100x2 = 200 \\
+	\hline 
+	\multicolumn{4}{|c|}{Total Access} & \multicolumn{1}{c|}{400} \\
+	\hline
+\end{longtable}
+\item in the O$_2$ operation: 
+\begin{longtable}{|p{.2\columnwidth}|p{.2\columnwidth}|p{.1\columnwidth}|p{.1\columnwidth}|p{.20\columnwidth}|}
+	\hline
+	\textbf{Concept} & \textbf{Construct} & \textbf{Access} & \textbf{Type} & \textbf{Average Access} \\
+	\hline 
+	UsedCar & Entity & 1 & R & 1x1x1 = 1 \\
+	\hline
+	UsedRepairs & Relationship & 200 & R & 200x1x1 = 200 \\
+	\hline
+	\multicolumn{4}{|c|}{Total Access} & \multicolumn{1}{c|}{201} \\
+	\hline
+\end{longtable}
+\vspace{-0.3cm}
+So, in the end we get an amount of access equal to 601. 
+\end{itemize}
+
+\textbf{If we have \#repairs attribute:} 
+\begin{itemize}
+\item in the O$_1$ operation: 
+\begin{longtable}{|p{.2\columnwidth}|p{.2\columnwidth}|p{.1\columnwidth}|p{.1\columnwidth}|p{.20\columnwidth}|}
+	\hline
+	\textbf{Concept} & \textbf{Construct} & \textbf{Access} & \textbf{Type} & \textbf{Average Access} \\
+	\hline 
+	Repair & Entity & 1 & W & 1x100x2 = 200 \\
+	\hline
+	UsedRepairs & Relationship & 1 & W & 1x100x2 = 200 \\
+	\hline 
+	UsedCar & Entity & 1 & R & 1x100x1 = 100 \\ 
+	\hline 
+	UsedCar & Entity & 1 & W & 1x100x2 = 200 \\ 
+	\hline
+	\multicolumn{4}{|c|}{Total Access} & \multicolumn{1}{c|}{700} \\
+	\hline
+\end{longtable}
+\item in the O$_2$ operation: 
+\begin{longtable}{|p{.2\columnwidth}|p{.2\columnwidth}|p{.1\columnwidth}|p{.1\columnwidth}|p{.20\columnwidth}|}
+	\hline
+	\textbf{Concept} & \textbf{Construct} & \textbf{Access} & \textbf{Type} & \textbf{Average Access} \\
+	\hline 
+	UsedCar & Entity & 1 & R & 1x1x1 = 1 \\ 
+	\hline 
+	\multicolumn{4}{|c|}{Total Access} & \multicolumn{1}{c|}{1} \\
+	\hline
+\end{longtable}
+\vspace{-0.3cm}
+So, in the and we get an amount of access equal to 701.
+\end{itemize}
+
+\noindent The \#repairs attribute did not significantly improves the operations performances. For this reason, we decided not keep the redundant attribute in our schema. 
+
+
+
+\subsection{Relational Schema}
+\includegraphics[scale=0.55]{relational_schema}
+
+NewCarSale, UsedCarSale, UsedRepairs and ExternalRepairs are relationships with optional partecipation, thus two options are available when converting them to relations:
+\begin{enumerate}
+	\item Create a new relation which references (with a foreign key constraint) the two participants in the relationship.
+	\item Incorporate the references in the relations Sales and Repair.
+\end{enumerate}
+The second option is simpler (because we don't need to introduce 4 extra relations) but it is also less efficient, since each instance of Repair and Sales is going to contain a null value. While this choice could be acceptable for an infrequently used relation, it is not tolerable in our case. For this reason it was decided to adopt the first solution.
+All the other relationships can be converted straightforwardly.
+
+\subsection{Data Dictionary}
+
+\input{tables/data}
+
+\subsection{External Constraints}
+\begin{itemize}
+	\item For Every Sales there must be an instance either of NewCarSale or UsedCarSale that references it, not both.
+	\item For Every Repair there must be an instance either of ExternalRepairs or UsedRepairs that references it, not both.
+	\item Entity role start with three instances: 'seller', 'mechanic' and 'finance'.
+	\item A seller cannot rent an used car that has the status 'in repair'.
+	\item A seller cannot sell a car that is already sold.
+	% \item Seller employees should have role equal to "seller".
+	\item The "Employee" field in a SALES instance should refer to an EMPLOYEE instance whose role is equal to "seller".
+	\item The "Employee" field in a RENTAL instance should refer to an EMPLOYEE instance whose role is equal to "seller".
+	% \item Mechanic employees should have role equal to "mechanic".
+	\item The "Employee" field in a REPAIR instance should refer to an EMPLOYEE instance whose role is equal to "mechanic".
+\end{itemize}
