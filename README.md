@@ -1,4 +1,4 @@
-# Database_uni
+# Foundations of Databases 
 Foundations of Databases university project:
 
 This is a project I had the opportunity to build with a group of 6 people.   
